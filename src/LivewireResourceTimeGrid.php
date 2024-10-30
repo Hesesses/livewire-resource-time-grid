@@ -248,7 +248,7 @@ class LivewireResourceTimeGrid extends Component
 
     public function hourSlotIntervalHeightInRems()
     {
-        return $this->hourHeightInRems / (60/$this->interval);
+        return $this->hourHeightInRems * (60/$this->interval) / (60/$this->interval);
     }
 
     private function getEventStyles($event, $events)
